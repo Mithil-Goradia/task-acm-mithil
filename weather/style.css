@@ -1,0 +1,162 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-image: url("back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+#unit {
+    width: 500px;
+    padding: 20px 0px 20px;
+    background-image: linear-gradient(to left, rgba(7, 7, 238, 0.256), rgba(245, 5, 245, 0.407));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+#nav{
+    display: flex;
+}
+.search {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 200px;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0px 16px rgba(246, 242, 242, 0.545);
+    opacity: 0.7;
+}
+
+#nav img {
+    width: 20px;
+}
+
+#tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#tab img{
+    width: 250px;
+}
+#tab h2, #tab h1 , #lower h3, #lower h4{
+    margin: 0;
+    padding: 0;
+}
+
+#lower {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+#box {
+    display: flex;
+}
+
+#lower img {
+    width: 65px;
+    height: 65px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.weather {
+    display: none;
+}
+
+.add{
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: cover;
+    }
+
+    #unit {
+        width: 90%;
+        padding: 10px 0px 10px;
+    }
+
+    #tab img {
+        width: 150px;
+    }
+
+    .temp {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .search {
+        height: 30px;
+        width: 150px;
+    }
+
+    button {
+        width: 30px;
+        height: 30px;
+    }
+
+    #lower {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #box {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #lower img {
+        width: 50px;
+        height: 50px;
+    }
+}
